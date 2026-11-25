@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Todo List</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="main-box">
+  <div class="header">
+    <div class="logo">✅</div>
+    <h1>MY TODO LIST</h1>
+    <p>Create • Add • Edit • Delete • Reset</p>
+    <span class="badge">Bano Qabil | Web Development | Marks: 10</span>
+  </div>
+
+  <div class="create-box">
+    <h2>✨ Create New Task</h2>
+    <div class="input-area">
+      <input type="text" id="taskInput" placeholder="Yahan apna naya kaam likhen...">
+      <button id="addBtn">+ ADD TASK</button>
+    </div>
+  </div>
+
+  <div class="stats">
+    <div class="stat-card blue"><span id="totalCount">0</span><label>Total Tasks</label></div>
+    <div class="stat-card green"><span id="doneCount">0</span><label>Completed</label></div>
+    <div class="stat-card orange"><span id="pendingCount">0</span><label>Pending</label></div>
+  </div>
+
+  <div class="list-header">
+    <h3>📋 Your Tasks List</h3>
+    <button id="resetBtn">🗑️ RESET ALL</button>
+  </div>
+
+  <ul id="taskList"></ul>
+  <div id="emptyMsg">Abhi koi task nahi hai. Upar se naya task add karen 👆</div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
